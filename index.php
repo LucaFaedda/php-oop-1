@@ -9,7 +9,12 @@ error_reporting(E_ALL);
         public $nome;
         public $durata;
         public $voto_originale;
-
+        
+        function __constructor($_nome, $_durata, $_voto_originale){
+            $this->nome = $_nome;
+            $this->durata = $_durata;
+            $this->voto_originale = $_voto_originale;
+        }
 
         public function setVoto($voto){
             $this-> voto_2 = $voto/2; //bisogna dare un nuovo valore al valore di this. 
