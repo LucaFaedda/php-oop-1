@@ -18,6 +18,8 @@ error_reporting(E_ALL);
             $this->attori = $_attori;
         }
 
+
+        //funzione per trasformare voto da decimi in quinti
         public function setVoto($voto){
             $this-> voto_2 = $voto/2; //bisogna dare un nuovo valore al valore di this. 
 
