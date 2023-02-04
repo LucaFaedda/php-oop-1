@@ -5,13 +5,23 @@
         public $nome;
         public $durata;
         public $voto;
+        public $media;
         
     }
 
     $movie_1 = new Movies();
     $movie_1->nome = "Il signore degli Anelli: La compagnia dell'Anello";
     $movie_1->durata= '2h 58m';
-    $movie_1->voto= 5;
+    $movie_1->voto= 9;
+    $movie_2 = new Movies();
+    $movie_2->nome = "Il signore degli Anelli: Le due Torri";
+    $movie_2->durata= '2h 59m';
+    $movie_2->voto= 8;
+    $movie_3 = new Movies();
+    $movie_3->nome = "Il signore degli Anelli: Il ritorno Del Re";
+    $movie_3->durata= '3h 30m';
+    $movie_3->voto= 10;
+
  
 ?>
 
@@ -27,22 +37,36 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col-12 text-center text-danger mt-4">
+                <h1>Trilogia Signore degli Anelli</h1>
+            </div>
             <div class="col-12 mt-5">
-                <h1>
-                    <?php 
-                        echo "Titolo:"." ".$movie_1->nome;
-                    ?>
-                </h1>
-                <h3>
-                    <?php 
-                        echo "Durata:"." ".$movie_1->durata;
-                    ?>               
-                </h3>
-                <h3>
-                    <?php 
-                        echo "Voto:"." ".$movie_1->voto;
-                    ?>
-                </h3>
+                <div>
+                    <h2><?php  echo "Titolo:"." ".$movie_1->nome;?>
+                    </h2>
+                    <h3><?php  echo "Durata:"." ".$movie_1->durata;?>               
+                    </h3>
+                    <h3><?php echo "Voto:"." ".$movie_1->voto;?>
+                </div>
+                <div>
+                    <h2><?php  echo "Titolo:"." ".$movie_2->nome;?>
+                    </h2>
+                    <h3><?php  echo "Durata:"." ".$movie_2->durata;?>               
+                    </h3>
+                    <h3><?php echo "Voto:"." ".$movie_2->voto;?>
+                </div>
+                <div>
+                    <h2><?php  echo "Titolo:"." ".$movie_3->nome;?>
+                    </h2>
+                    <h3><?php  echo "Durata:"." ".$movie_3->durata;?>               
+                    </h3>
+                    <h3><?php echo "Voto:"." ".$movie_3->voto;?>
+                </div>
+                <div>
+                    <h3 class="text-danger">
+                        <?php ?>
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
