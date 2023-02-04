@@ -8,15 +8,12 @@ error_reporting(E_ALL);
 
         public $nome;
         public $durata;
-        // public $voto;
+        public $voto_originale;
 
 
         public function setVoto($voto){
-            $this-> voto_2 = $voto/2;
-            echo "<pre>";
-            var_dump($this);
-            
-            "</pre>";
+            $this-> voto_2 = $voto/2; //bisogna dare un nuovo valore al valore di this. 
+
         }
 
         public function getVoto(){
@@ -30,15 +27,19 @@ error_reporting(E_ALL);
     $movie_1 = new Movies();
     $movie_1->nome = "Il signore degli Anelli: La compagnia dell'Anello";
     $movie_1->durata= '2h 58m';
-    // $movie_1->voto= 9;
+    $movie_1->voto_originale = 9;
     $movie_2 = new Movies();
     $movie_2->nome = "Il signore degli Anelli: Le due Torri";
     $movie_2->durata= '2h 59m';
-    // $movie_2->voto= 9;
+    $movie_2->voto_originale = 9;
     $movie_3 = new Movies();
     $movie_3->nome = "Il signore degli Anelli: Il ritorno Del Re";
     $movie_3->durata= '3h 30m';
-    // $movie_3->voto= 10;
+    $movie_3->voto_originale = 10;
+
+    $movie_1->setVoto( $movie_1->voto_originale); // qua posso passarli il voto originale ma solo con la freccia.
+    $movie_2->setVoto( $movie_2->voto_originale);
+    $movie_3->setVoto( $movie_3->voto_originale);
 
     
 
@@ -66,22 +67,17 @@ error_reporting(E_ALL);
                 <div>
                     <h2><?php  echo "Titolo:"." ".$movie_1->nome;?></h2>
                     <h3><?php  echo "Durata:"." ".$movie_1->durata;?></h3>
-                    <h3>
-                        <?php  ?>
-                        <?php 
-                        $movie_1->setVoto(8);
-                        echo "Voto:"."<br>".$movie_1->getVoto();?>
-                    </h3>
+                    <h3><?php echo "Voto in decimi:"." ".$movie_1->voto_originale."<br>"."Voto in quinti:"." ".$movie_1->getVoto();?></h3>
                 </div>
-                <div>
+                <div class="mt-4">
                     <h2><?php  echo "Titolo:"." ".$movie_2->nome;?></h2>
                     <h3><?php  echo "Durata:"." ".$movie_2->durata;?></h3>               
-                    <h3><?php echo "Voto:"." ".$movie_2->voto;?></h3>
+                    <h3><?php echo "Voto in decimi:"." ".$movie_2->voto_originale."<br>"."Voto in quinti:"." ".$movie_2->getVoto();?></h3>
                 </div>
-                <div>
+                <div class="mt-4">
                     <h2><?php  echo "Titolo:"." ".$movie_3->nome;?></h2>
                     <h3><?php  echo "Durata:"." ".$movie_3->durata;?></h3>
-                    <h3><?php echo "Voto:"." ".$movie_3->voto;?></h3>
+                    <h3><?php echo "Voto in decimi:"." ".$movie_3->voto_originale."<br>"."Voto in quinti:"." ".$movie_3->getVoto();?></h3>
                 </div>
                 <div>
                     <h3 class="text-danger">
