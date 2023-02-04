@@ -46,7 +46,7 @@ error_reporting(E_ALL);
     $movie_2->setVoto( $movie_2->voto_originale);
     $movie_3->setVoto( $movie_3->voto_originale);
 
-    
+    // con i costrutti è più pulito il codice in HTML
 
     
 
