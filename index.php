@@ -31,18 +31,21 @@
                         <p><?php  echo "<strong class='text-danger'>Durata:</strong>"." ".$durata_1;?></p>
                         <p><?php echo "<strong class='text-danger'>Voto in decimi:</strong>"." ".$voto_originale_1."<br>"."<strong class='text-danger'>Voto in quinti:</strong>"." ".$movie_1->getVoto();?></p>
                         <p><?php echo "<strong class='text-danger'>Attori:</strong>"." ".implode(", ",$attori_1); ?></p>
+                        <p><?php  echo "<strong class='text-danger'>Genere:</strong>"." ".$genere_1;?></p>
                     </div>
                     <div class="mt-4">
                         <h2 class="text-primary"><?php  echo $nome_2;?></h2>
                         <p><?php  echo "<strong class='text-danger'>Durata:</strong>"." ".$durata_2;?></p>               
                         <p><?php echo "<strong class='text-danger'>Voto in decimi:</strong>"." ".$voto_originale_2."<br>"."<strong class='text-danger'>Voto in quinti:</strong>"." ".$movie_2->getVoto();?></p>
                         <p><?php echo "<strong class='text-danger'>Attori:</strong>"." ".implode(", ",$attori_2); ?></p>
+                        <p><?php  echo "<strong class='text-danger'>Genere:</strong>"." ".$genere_2;?></p>
                     </div>
                     <div class="mt-4">
                         <h2 class="text-primary"><?php  echo $nome_3;?></h2>
                         <p><?php  echo "<strong class='text-danger'>Durata:</strong>"." ".$durata_3;?></p>
                         <p><?php echo "<strong class='text-danger'>Voto in decimi:</strong>"." ".$voto_originale_3."<br>"."<strong class='text-danger'>Voto in quinti:</strong>"." ".$movie_3->getVoto();?></p>
                         <p><?php echo "<strong class='text-danger'>Attori:</strong>"." ".implode(", ",$attori_3); ?></p>
+                        <p><?php  echo "<strong class='text-danger'>Genere:</strong>"." ".$genere_3;?></p>
                     </div>
                     <div>
                         <h3 class="text-danger">
