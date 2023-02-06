@@ -6,16 +6,16 @@ include __DIR__.'/attori/movie_3.php';
 
 Class Movies{
     
-    public $nome;
-    public $durata;
+        public $nome;
+        public $durata;
         public $voto_originale;
         public $attori;
         
-        function __constructor($_nome, $_durata, $_voto_originale, $_attori){
-            $this->nome = $_nome;
-            $this->durata = $_durata;
-            $this->voto_originale = $_voto_originale;
-            $this->attori = $_attori;
+        function __constructor($nome, $durata, $voto_originale, $_ttori){
+            $this->nome = $nome;
+            $this->durata = $durata;
+            $this->voto_originale = $voto_originale;
+            $this->attori = $attori;
         }
         
         
@@ -52,5 +52,7 @@ Class Movies{
     $movie_1->setVoto( $voto_originale_1); // qua posso passarli il voto originale ma solo con la freccia.
     $movie_2->setVoto( $voto_originale_2);
     $movie_3->setVoto( $voto_originale_3);
+    
+ 
     
     ?>

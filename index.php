@@ -1,6 +1,6 @@
 <?php 
 
-    include __DIR__.'/classi.php'
+    include __DIR__.'/classi.php';   
 
 ?>
 
@@ -21,6 +21,11 @@
                     <h1>Trilogia Signore degli Anelli</h1>
                 </div>
                 <div class="col-12 mt-5">
+                    <?php 
+
+                         
+                    ?>
+
                     <div>
                         <h2 class="text-primary"><?php  echo $nome_1;?></h2>
                         <p><?php  echo "<strong class='text-danger'>Durata:</strong>"." ".$durata_1;?></p>
